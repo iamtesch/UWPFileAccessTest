@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="OneDriveFileAccessRepro.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OneDriveFileAccessRepro"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock MaxWidth="400" HorizontalAlignment="Center" TextWrapping="Wrap">Use the button to open a file picker to select files from both OneDrive and locally on the system.  OneDrive files (at least on some Windows 10 and 11 systems) will not be able to be accessed in the C++ code that this calls, and will return an error.  Other files will return success</TextBlock>
+            <Button HorizontalAlignment="Center" Click="Button_Click">Click Me To Test File Import</Button>
+        </StackPanel>
+    </Grid>
+</Page>
